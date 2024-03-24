@@ -1,0 +1,26 @@
+﻿<Window x:Class="GTP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GTP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Promotions">
+                <local:PromotionsView />
+            </TabItem>
+
+            <TabItem Header="Elèves">
+                <local:ElevesView />
+            </TabItem>
+            <TabItem Header="TPs">
+                <local:TPsView />
+            </TabItem>
+            <TabItem Header="Tâches">
+                <local:TachesView />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
